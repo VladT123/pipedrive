@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pipedrive CRM Integration</title>
+</head>
+<body>
+  <!-- Example input forms -->
+<p>Client ditails</p>
+<form>
+  <input type="text" id="name" placeholder="First Name" required>
+  <input type="text" id="lastName" placeholder="Last Name"required>
+  <input type="tel" id="phone" placeholder="phone" required>
+  <input type="email" id="email" placeholder="Email" required>
+</form>
+<p>Service location</p>
+<form>
+  <input type="text" id="address" placeholder="Address" required>
+  <input type="text" id="city" placeholder="City"required>
+  <input type="text" id="state" placeholder="State" required>
+  <input type="number" id="zip" placeholder="Zip code" required>
+  <select id="area">
+    <option value="">Area</option>
+    <option value="area 1">Area 1</option>
+    <option value="area 2">Area 2</option>
+    <option value="area 3">Area 3</option>
+  </select>
+</form>
+<p>Job details</p>
+<form>
+  <select id="type">
+    <option value="">Job type</option>
+    <option value="Job 1">Job 1</option>
+    <option value="Job 2">Job 2</option>
+    <option value="Job 3">Job 3</option>
+  </select>
+
+  <select id="source">
+    <option value="">Job source</option>
+    <option value="source 1">source 1</option>
+    <option value="source 2">source 2</option>
+    <option value="source 3">source 3</option>
+  </select>
+
+  <textarea id="description" name="description" rows="4" cols="50" placeholder="description"></textarea>
+</form>
+<p>Sheldued</p>
+<form>
+  <label for="date_start">Start date:</label>
+  <input type="date" id="date_start" name="date_start">
+
+  <label for="time_start">Start time:</label>
+  <input type="time" id="time_start" name="time_start">
+
+  <label for="time_end">end time:</label>
+  <input type="time" id="time_end" name="time_end">
+
+  <select id="test">
+    <option value="">Test select</option>
+    <option value="test 1">test 1</option>
+    <option value="test 2">test 2</option>
+    <option value="test 3">test 3</option>
+  </select>
+  <!-- Add more input fields as needed -->
+</form>
+  
+  <button onclick="saveToPipedrive()">Save to Pipedrive</button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
